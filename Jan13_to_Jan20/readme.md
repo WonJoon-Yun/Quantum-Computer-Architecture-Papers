@@ -31,7 +31,33 @@
 - (2) Topology-oriented representative
 - (3) Hardware-oriented policy
 
-###
+### Background - Calibration and Characterization in Quantum Gates
+
+Operating CNOT is enabled by sophisticated control of pulses, which depends a tuning of "drive frequency", "amplitude", "phase", and "duration".
+
+If they are not calibriated well, the error will be *accumulated*. Thus, the program fidelity will be degraded.
+
+To optimize the calibration, *characterization* of quantum gates in physical device is crucial.
+
+Method-1: Quantum Process Tomography (QPT) is an approach that constructs the entire quantum process matrix for a certain gate. This requires (1) quibt preparation in various input states, gate application, and measurement of output states to characterize the gate's behavior fully.
+
+Method-2: Randomized Benchmarking (RB) is more efficient alternative for characterization. It determines the average gate error rates through random gate sequences applied to qubit.
+
+Modern Methods: Leverage both QPT and RB.
+
+
+### Echoed CR
+
+Echoed Cross Resonance (Echoed CR) pulse is  one of the implementation method for CNOT. It is implemented with multiple Hamiltonian interactions: `ZX, ZZ, IZ, IX, IY` and `ZY`. The goal is to tune `ZX` well to rotate 90' precisely.
+
+* [ ] Q) Why does ZX matter?
+
+$$
+\hat{H}(\Omega_{CR}, \Omega_T) = v_{ZX}\hat{Z}\hat{X} +...
+
+$$
+
+- ZZ interaction requires IY DRAG calibration Why?
 
 ## 2. ARTERY Fast Quantum Feedback using Branch Prediction
 
