@@ -64,7 +64,8 @@ $$ -->
 - *What is Problem?* MWPM decoder fails to decode when the measurement error occurs before performing transversal CNOT.
 - *Why is it important?* MWPM decoder takes more rounds and this leads to lower threshold.
 - *Limitation of Prior Work*: MWPM decoder assumes that single physical fault flips upto 2 checks, but transversal CNOT 
-- *Insight* Correlated decoding can decode 3 flips with one syndrome extraction round, because correlated decoder can explain it with one fault. No extra syndrome rounds are required because the model already contains the correct single-fault explanation.
+- *Insight* Correlated decoding can decode 3 flips with one syndrome extraction round. 
+<!-- because correlated decoder can explain it with one fault. No extra syndrome rounds are required because the model already contains the correct single-fault explanation. -->
 - *Limitation of This Work*: TBD.
 
 
