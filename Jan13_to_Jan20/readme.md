@@ -67,14 +67,14 @@ $$ -->
 - *Insight* Correlated decoding can decode 3 flips with one syndrome extraction round. 
 <!-- because correlated decoder can explain it with one fault. No extra syndrome rounds are required because the model already contains the correct single-fault explanation. -->
 - *Limitation of This Work*: TBD.
-
+<!-- 
 
  - Hyperedge: 
 
 The logical cycle is typically defined as d syndrome rounds where the zero or two error events occur.
 However, 
 
-- Consider the transversal CNOT between two logical qubit.
+- Consider the transversal CNOT between two logical qubit. -->
 ## 2. ARTERY Fast Quantum Feedback using Branch Prediction
 
 ## 3. Constant-Rate Entanglement Distillation for Fast Quantum Interconnects
